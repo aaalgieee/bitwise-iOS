@@ -9,9 +9,6 @@ import SwiftUI
 
 struct sample1: View {
     var body: some View {
-        ZStack{
-            Color(.black)
-                .ignoresSafeArea()
             
             VStack{
                 Image("sparcs")
@@ -23,13 +20,11 @@ struct sample1: View {
                     .font(.largeTitle)
                     .fontWeight(.semibold)
                     .multilineTextAlignment(.center)
-                    .foregroundStyle(Color.white)
                 
             }
             
         }
     }
-}
 
 #Preview {
     sample1()
