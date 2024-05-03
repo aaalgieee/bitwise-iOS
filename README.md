@@ -1,4 +1,5 @@
 # UP SPARCS bit/wise iOS Development Event
 ## ContentViews
-- sample1
+- helloWorld
+- sparcsView
 - cardGame
