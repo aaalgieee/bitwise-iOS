@@ -14,6 +14,11 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             VStack (spacing: 30) {
+                Image("sparcs")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/)
+                    .clipShape(RoundedRectangle(cornerRadius: 10))
                 Button("helloWorld 👋🏻"){
                     showHelloWorldView = true
                 }
@@ -27,7 +32,7 @@ struct ContentView: View {
             .buttonStyle(.borderedProminent)
             .font(.largeTitle)
             .bold()
-            .navigationTitle("Main View")
+            .navigationTitle("bit/wise - iOS")
         }
         .fullScreenCover(isPresented: $showHelloWorldView, content: {
             helloWorld()
