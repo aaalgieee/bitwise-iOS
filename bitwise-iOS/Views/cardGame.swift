@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct cardGame: View {
+    @Environment(\.dismiss) private var dismiss
     @State var playerCard = "card7"
     @State var cpuCard = "card13"
     
@@ -63,6 +64,11 @@ struct cardGame: View {
                 }
                 .foregroundStyle(.white)
                 Spacer()
+                Button("Back to Main View"){
+                    dismiss()
+                }
+                .foregroundColor(/*@START_MENU_TOKEN@*/.white/*@END_MENU_TOKEN@*/)
+                .buttonStyle(.borderedProminent)
             }
         }
     }

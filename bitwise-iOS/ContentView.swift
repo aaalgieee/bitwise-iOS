@@ -8,21 +8,41 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var showHelloWorldView = false
+    @State private var showSparcsView = false
+    @State private var showCardGameView = false
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            VStack (spacing: 30) {
+                Button("helloWorld 👋🏻"){
+                    showHelloWorldView = true
+                }
+                Button("sparcsView ⚡️"){
+                    showSparcsView = true
+                }
+                Button("cardGame 🃏"){
+                    showCardGameView = true
+                }
+            }
+            .buttonStyle(.borderedProminent)
+            .font(.largeTitle)
+            .bold()
+            .navigationTitle("Main View")
+        }
+        .fullScreenCover(isPresented: $showHelloWorldView, content: {
+            helloWorld()
+        })
+        .fullScreenCover(isPresented: $showSparcsView, content: {
+            sparcsView()
+        })
+        .fullScreenCover(isPresented: $showCardGameView, content: {
+            cardGame()
+        })
+        
     }
 }
 
 
 #Preview {
     ContentView()
-}
-
-#Preview ("Sample1"){
-    sample1()
-    
-}
-
-#Preview ("Card Game") {
-    cardGame()
 }

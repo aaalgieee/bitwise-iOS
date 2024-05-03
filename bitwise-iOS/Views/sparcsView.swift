@@ -7,7 +7,8 @@
 
 import SwiftUI
 
-struct sample1: View {
+struct sparcsView: View {
+    @Environment(\.dismiss) private var dismiss
     var body: some View {
             
             VStack{
@@ -20,6 +21,11 @@ struct sample1: View {
                     .font(.largeTitle)
                     .fontWeight(.semibold)
                     .multilineTextAlignment(.center)
+                    .padding()
+                Button("Back to Main View"){
+                    dismiss()
+                }
+                .buttonStyle(.borderedProminent)
                 
             }
             
@@ -27,5 +33,5 @@ struct sample1: View {
     }
 
 #Preview {
-    sample1()
+    sparcsView()
 }

@@ -7,21 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0227E0872BE57A4900341998 /* helloWorld.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0227E0862BE57A4900341998 /* helloWorld.swift */; };
 		025138442BDE8D9C000DB0E4 /* bitwise_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025138432BDE8D9C000DB0E4 /* bitwise_iOSApp.swift */; };
 		025138462BDE8D9C000DB0E4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025138452BDE8D9C000DB0E4 /* ContentView.swift */; };
 		025138482BDE8D9D000DB0E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 025138472BDE8D9D000DB0E4 /* Assets.xcassets */; };
 		0251384B2BDE8D9D000DB0E4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0251384A2BDE8D9D000DB0E4 /* Preview Assets.xcassets */; };
-		025138522BDE9063000DB0E4 /* sample1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025138512BDE9063000DB0E4 /* sample1.swift */; };
+		025138522BDE9063000DB0E4 /* sparcsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025138512BDE9063000DB0E4 /* sparcsView.swift */; };
 		025138562BDE95CF000DB0E4 /* cardGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025138552BDE95CF000DB0E4 /* cardGame.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0227E0862BE57A4900341998 /* helloWorld.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = helloWorld.swift; sourceTree = "<group>"; };
 		025138402BDE8D9C000DB0E4 /* bitwise-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "bitwise-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		025138432BDE8D9C000DB0E4 /* bitwise_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bitwise_iOSApp.swift; sourceTree = "<group>"; };
 		025138452BDE8D9C000DB0E4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		025138472BDE8D9D000DB0E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0251384A2BDE8D9D000DB0E4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		025138512BDE9063000DB0E4 /* sample1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sample1.swift; sourceTree = "<group>"; };
+		025138512BDE9063000DB0E4 /* sparcsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sparcsView.swift; sourceTree = "<group>"; };
 		025138552BDE95CF000DB0E4 /* cardGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cardGame.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -36,6 +38,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0227E0892BE57B0F00341998 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0227E0862BE57A4900341998 /* helloWorld.swift */,
+				025138512BDE9063000DB0E4 /* sparcsView.swift */,
+				025138552BDE95CF000DB0E4 /* cardGame.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		025138372BDE8D9C000DB0E4 = {
 			isa = PBXGroup;
 			children = (
@@ -57,8 +69,7 @@
 			children = (
 				025138432BDE8D9C000DB0E4 /* bitwise_iOSApp.swift */,
 				025138452BDE8D9C000DB0E4 /* ContentView.swift */,
-				025138512BDE9063000DB0E4 /* sample1.swift */,
-				025138552BDE95CF000DB0E4 /* cardGame.swift */,
+				0227E0892BE57B0F00341998 /* Views */,
 				025138472BDE8D9D000DB0E4 /* Assets.xcassets */,
 				025138492BDE8D9D000DB0E4 /* Preview Content */,
 			);
@@ -143,9 +154,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0227E0872BE57A4900341998 /* helloWorld.swift in Sources */,
 				025138462BDE8D9C000DB0E4 /* ContentView.swift in Sources */,
 				025138562BDE95CF000DB0E4 /* cardGame.swift in Sources */,
-				025138522BDE9063000DB0E4 /* sample1.swift in Sources */,
+				025138522BDE9063000DB0E4 /* sparcsView.swift in Sources */,
 				025138442BDE8D9C000DB0E4 /* bitwise_iOSApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
