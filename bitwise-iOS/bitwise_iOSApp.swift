@@ -11,7 +11,7 @@ import SwiftUI
 struct bitwise_iOSApp: App {
     var body: some Scene {
         WindowGroup {
-            sample1()
+           ContentView()
         }
     }
 }

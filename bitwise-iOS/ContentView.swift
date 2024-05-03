@@ -13,6 +13,16 @@ struct ContentView: View {
     }
 }
 
+
 #Preview {
     ContentView()
+}
+
+#Preview ("Sample1"){
+    sample1()
+    
+}
+
+#Preview ("Card Game") {
+    cardGame()
 }
